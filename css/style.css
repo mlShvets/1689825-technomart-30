@@ -620,6 +620,7 @@ input:focus+.header-search-label svg {
   height: 10px;
   border-radius: 50%;
   cursor: pointer;
+  padding: 0;
 }
 
 .dot-switch-slider .dot-current::before {
@@ -627,7 +628,7 @@ input:focus+.header-search-label svg {
   position: absolute;
   border: none;
   background-color: var(--basic-red);
-  left: 3px;
+  left: 2px;
   bottom: 2px;
   width: 6px;
   height: 6px;
