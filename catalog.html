@@ -16,30 +16,27 @@
   <header class="main-header catalog-header">
     <div class="header-top-wrap">
       <div class="header-top container">
-        <a class="header-logo main-logo" href="index.html">
-          <img class="header-logo-img" src="/img/logo-technomart.svg" width="108" height="18"
-            alt="Логотип магазина «Техномарт»">
+        <a class="main-logo" href="index.html">
+          <img src="/img/logo-technomart.svg" width="108" height="18" alt="Логотип магазина «Техномарт»">
         </a>
         <form class="header-search-form">
+          <input type="search" placeholder="Поиск:" name="header-search" id="header-search">
           <label class="header-search-label" for="header-search" aria-label="Поиск">
             <svg width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M13.46 12.04L17 15.6 15.59 17l-3.55-3.54a7.5 7.5 0 111.41-1.41zM7.5 2a5.5 5.5 0 10.01 11.01A5.5 5.5 0 007.5 2z"
-                fill="#fff" />
+                d="M13.46 12.04L17 15.6 15.59 17l-3.55-3.54a7.5 7.5 0 111.41-1.41zM7.5 2a5.5 5.5 0 10.01 11.01A5.5 5.5 0 007.5 2z" />
             </svg>
           </label>
-          <input type="search" placeholder="Поиск:" name="header-search" id="header-search">
         </form>
         <ul class="header-top-menu-list">
-          <li class="header-top-menu-item bookmark">
+          <li class="header-top-menu-item">
             <a class="bookmark-link" href="#">Закладки: 0</a>
           </li>
-          <li class="header-top-menu-item basket
-          full-basket">
+          <li class="header-top-menu-item">
             <a class="basket-link" href="#">Корзина: 10</a>
           </li>
-          <li class="header-top-menu-item order">
-            <a href="#">Оформить заказ</a>
+          <li class="header-top-menu-item">
+            <a class="order-link" href="#">Оформить заказ</a>
           </li>
         </ul>
       </div>
@@ -54,16 +51,14 @@
         <a class="profile-username" href="#">
           <svg width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
-              d="M17.88 14.17c-2.14-.74-4.25-1.67-5.2-2.4-.66-.5-.78-1.61-.52-2.4a5.49 5.49 0 001.86-4.29C14.02 2.28 12.22 0 10 0 7.78 0 5.98 2.28 5.98 5.08c0 1.8.75 3.38 1.86 4.28.26.8.14 1.92-.51 2.42-.95.72-3.07 1.65-5.21 2.39C-.03 14.9 0 18 0 18h20s.02-3.1-2.12-3.83z"
-              fill="#C5C5C5" />
+              d="M17.88 14.17c-2.14-.74-4.25-1.67-5.2-2.4-.66-.5-.78-1.61-.52-2.4a5.49 5.49 0 001.86-4.29C14.02 2.28 12.22 0 10 0 7.78 0 5.98 2.28 5.98 5.08c0 1.8.75 3.38 1.86 4.28.26.8.14 1.92-.51 2.42-.95.72-3.07 1.65-5.21 2.39C-.03 14.9 0 18 0 18h20s.02-3.1-2.12-3.83z" />
           </svg>
           Равшан Джамшутович</a>
         <a class="logout" href="#">
           <svg width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20 8.5L11.12 0v6h-6v5h6v6L20 8.5z" fill="#C5C5C5" />
+            <path d="M20 8.5L11.12 0v6h-6v5h6v6L20 8.5z" />
             <path
-              d="M2.1 13.95V3.05c.02-.38.18-1.06 1.02-1.06h5.02V0H3.12C.94 0 .12 1.81.09 3.03v10.94C.1 15.2.94 17 3.12 17h5.02v-1.99H3.12c-.84 0-1-.68-1.01-1.06z"
-              fill="#C5C5C5" />
+              d="M2.1 13.95V3.05c.02-.38.18-1.06 1.02-1.06h5.02V0H3.12C.94 0 .12 1.81.09 3.03v10.94C.1 15.2.94 17 3.12 17h5.02v-1.99H3.12c-.84 0-1-.68-1.01-1.06z" />
           </svg>
         </a>
         <div class="profile-nav">
@@ -188,7 +183,10 @@
                 <img src="img/bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </div>
               <div class="product-info">
-                <h3 class="product-info-title"><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
+                <h3 class="product-info-title">
+                  <span>Перфоратор BOSCH</span>
+                  <span>BFG 6000</span>
+                </h3>
                 <p class="old-price">30500 Р.</p>
                 <p class="discount-price">25500 Р.</p>
               </div>
@@ -202,7 +200,10 @@
                 <img src="img/bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </div>
               <div class="product-info">
-                <h3 class="product-info-title"><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
+                <h3 class="product-info-title">
+                  <span>Перфоратор BOSCH</span>
+                  <span>BFG 6000</span>
+                </h3>
                 <p class="old-price">30500 Р.</p>
                 <p class="discount-price">25500 Р.</p>
               </div>
@@ -216,7 +217,10 @@
                 <img src="img/bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </div>
               <div class="product-info">
-                <h3 class="product-info-title"><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
+                <h3 class="product-info-title">
+                  <span>Перфоратор BOSCH</span>
+                  <span>BFG 6000</span>
+                </h3>
                 <p class="old-price">30500 Р.</p>
                 <p class="discount-price">25500 Р.</p>
               </div>
@@ -230,7 +234,10 @@
                 <img src="img/bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
               </div>
               <div class="product-info">
-                <h3 class="product-info-title"><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
+                <h3 class="product-info-title">
+                  <span>Перфоратор BOSCH</span>
+                  <span>BFG 3000</span>
+                </h3>
                 <p class="old-price">22500 Р.</p>
                 <p class="discount-price">15500 Р.</p>
               </div>
@@ -244,7 +251,10 @@
                 <img src="img/bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </div>
               <div class="product-info">
-                <h3 class="product-info-title"><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
+                <h3 class="product-info-title">
+                  <span>Перфоратор BOSCH</span>
+                  <span>BFG 6000</span>
+                </h3>
                 <p class="old-price">30500 Р.</p>
                 <p class="discount-price">25500 Р.</p>
               </div>
@@ -258,7 +268,10 @@
                 <img src="img/bfg-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
               </div>
               <div class="product-info">
-                <h3 class="product-info-title"><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
+                <h3 class="product-info-title">
+                  <span>Перфоратор BOSCH</span>
+                  <span>BFG 2000</span>
+                </h3>
                 <p class="old-price">22500 Р.</p>
                 <p class="discount-price">12500 Р.</p>
               </div>
@@ -272,7 +285,10 @@
                 <img src="img/bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
               </div>
               <div class="product-info">
-                <h3 class="product-info-title"><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
+                <h3 class="product-info-title">
+                  <span>Перфоратор BOSCH</span>
+                  <span>BFG 3000</span>
+                </h3>
                 <p class="old-price">22500 Р.</p>
                 <p class="discount-price">15500 Р.</p>
               </div>
@@ -286,7 +302,10 @@
                 <img src="img/bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </div>
               <div class="product-info">
-                <h3 class="product-info-title"><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
+                <h3 class="product-info-title">
+                  <span>Перфоратор BOSCH</span>
+                  <span>BFG 6000</span>
+                </h3>
                 <p class="old-price">30500 Р.</p>
                 <p class="discount-price">25500 Р.</p>
               </div>
@@ -300,7 +319,10 @@
                 <img src="img/bfg-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
               </div>
               <div class="product-info">
-                <h3 class="product-info-title"><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
+                <h3 class="product-info-title">
+                  <span>Перфоратор BOSCH</span>
+                  <span>BFG 2000</span>
+                </h3>
                 <p class="old-price">22500 Р.</p>
                 <p class="discount-price">12500 Р.</p>
               </div>
@@ -327,8 +349,6 @@
             </span>
           </div>
         </section>
-
-
       </div>
     </div>
     <div class="discription-drill-wrap">
@@ -343,7 +363,7 @@
           ударная
           дрель.</p>
       </article>
-      </diva>
+    </div>
   </main>
   <footer class="main-footer">
     <div class="footer-top container">
@@ -415,35 +435,17 @@
       </div>
     </div>
   </footer>
-  <section style="display: none;">
-    <h2>Форма обратной связи</h2>
-    <form action="https://echo.htmlacademy.ru" method="POST">
-      <label for="name">Ваше имя:</label>
-      <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-      <label for="email">Ваш e-mail:</label>
-      <input type="email" name="email" id="email" placeholder="email@example.com">
-      <label for="message">Текст письма:</label>
-      <textarea id="message" name="message" placeholder="В свободной форме"></textarea>
-      <button type="submit"> Отправить</button>
-    </form>
-    <button type="button"> Закрыть</button>
-  </section>
 
-  <section style="display: none;">
-    <h2>Интерактивная карта</h2>
-    <div>
-      <!-- Карта -->
-      <button type="button"> Закрыть</button>
-    </div>
-  </section>
-
-  <section style="display: none;">
+  <section class="modal-cart">
     <p>Товар добавлен в корзину!</p>
-    <div>
-      <a href="#">Оформить заказ</a>
-      <a href="#">Продолжить покупки</a>
+    <div class="cart-button-wrap">
+      <a class="button" href="#">Оформить заказ</a>
+      <a class="button button-resume" href="#">Продолжить покупки</a>
     </div>
+    <button class="modal-close close-cart" type="button" aria-label="Закрыть"> </button>
   </section>
+  <script src="js/cart.js"></script>
+
 </body>
 
 </html>
