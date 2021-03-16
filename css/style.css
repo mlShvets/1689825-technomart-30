@@ -73,11 +73,15 @@
   --button-hover: #CA2C37;
   --nav-text-active: rgba(255, 255, 255, 0.5);
   --product-item-shadow: rgba(0, 0, 0, 0.15);
-  --bervices-extra: #405069;
+  --services-extra: #405069;
   --sort-item: rgba(0, 0, 0, 0.3);
   --slider-title: rgba(0, 0, 0, 0.25);
   --feedback-gray: #F4F4F4;
   --cart-gray: #F1F1F1;
+  --logo-shadow: rgba(0, 0, 0, 0.24);
+  --toggle-shadow: rgba(0, 0, 0, 0.10);
+  --feedback-shadow: rgba(0, 0, 0, 0.75);
+  --modal-shadow: rgba(0, 0, 0, 0.15);
 }
 
 .page-body {
@@ -135,6 +139,7 @@ img {
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .button:hover, .button:focus {
@@ -166,14 +171,14 @@ img {
 }
 
 .main-logo {
-  display: inline-block;
+  display: block;
   box-sizing: border-box;
   text-align: center;
   padding-top: 12px;
   background-color: var(--basic-red);
   width: 220px;
   height: 47px;
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: inset 0px -5px 0px var(--logo-shadow);
 }
 
 .main-logo:active {
@@ -478,8 +483,6 @@ input:focus+.header-search-label svg {
 }
 
 .offer-button {
-  display: inline-block;
-  text-align: center;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1115,7 +1118,7 @@ input:focus+.header-search-label svg {
 }
 
 .contacts .map-link {
-  display: inline-block;
+  display: block;
   margin-bottom: 18px;
 }
 
@@ -1365,7 +1368,7 @@ fieldset:last-of-type {
   border: 8px solid var(--basic-white);
   background-color: var(--toggle);
   border-radius: 50%;
-  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 2px 0px var(--toggle-shadow);
   cursor: pointer;
 }
 
@@ -1844,7 +1847,7 @@ fieldset .supply-legend {
   width: 620px;
   height: 430px;
   box-sizing: border-box;
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 20px 40px var(--feedback-shadow);
   border-top: 7px solid var(--basic-red);
   background-color: var(--basic-white);
   z-index: 10;
@@ -1947,7 +1950,7 @@ fieldset .supply-legend {
   margin: 0 auto;
   width: 940px;
   height: 450px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 20px var(--modal-shadow);
   border-top: 7px solid var(--basic-red);
   background-image: url(../img/map-popup.png);
   z-index: 10;
@@ -1969,7 +1972,7 @@ fieldset .supply-legend {
   margin: 0 auto;
   width: 620px;
   height: 282px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 20px var(--modal-shadow);
   border-top: 7px solid var(--basic-red);
   background-color: var(--basic-white);
   z-index: 10;
